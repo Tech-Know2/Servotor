@@ -44,12 +44,12 @@ const Navbar = () => {
                                 AI
                             </Link>
                             <Link href="/" className="text-black hover:bg-neutral-800 hover:text-white px-3 py-2 rounded-md text-md font-medium">
-                                About Us
+                                Resources
                             </Link>
                         </div>
 
                         {/* Right-side panel link */}
-                        <div className="flex items-center sm:ml-6 bg-neutral-500 px-4 py-1 rounded-md hover:bg-neutral-800 hover:text-white font-semibold text-neutral-800">
+                        <div className="flex items-center sm:ml-6 bg-teal-700 px-4 py-1 rounded-md hover:bg-teal-800 hover:text-white font-semibold text-white">
                             <Link href="/">Your Panel</Link>
                         </div>
                     </div>
