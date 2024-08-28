@@ -1,0 +1,26 @@
+[
+    {
+        "header": "DDoS Protection",
+        "subHeader": "Complimentry DDoS Protection",
+        "body": "Keep your services live with DDoS protection on your games, sites, and machines.",
+        "image": ""
+    },
+    {
+        "header": "Site Migration",
+        "subHeader": "Easily Migrate Your Sites",
+        "body": "With CyberPanel, you can easily migrate websites, cPanel, and more.",
+        "image": ""
+    },
+    {
+        "header": "100+ Games",
+        "subHeader": "Countless Games For You",
+        "body": "With Pterodactyl enjoy over 100+ games and game variants all within one panel.",
+        "image": ""
+    },
+    {
+        "header": "1000+ AI Models",
+        "subHeader": "Multi Model, Multimodal",
+        "body": "Enjoy over 1000+ AI models to suit your every need.",
+        "image": ""
+    }
+]

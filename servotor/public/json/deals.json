@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Web Servers",
+        "image": "serverLogo.png",
+        "link": "/web-servers"
+    },
+    {
+        "label": "Game Servers",
+        "image": "gameServerLogo.png",
+        "link": "/game-servers"
+    },
+    {
+        "label": "Mautic",
+        "image": "mauticLogo.png",
+        "link": "/mautic"
+    },
+    {
+        "label": "VPS",
+        "image": "vpsLogo.png",
+        "link": "/vps"
+    }
+]

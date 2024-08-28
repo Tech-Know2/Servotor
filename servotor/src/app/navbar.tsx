@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <div>
             {/* Top-right login/signup links */}
-            <div className="flex flex-row gap-6 justify-end px-[5%] py-[1%]">
+            <div className="flex flex-row gap-6 justify-end px-[5%] py-[0.5%]">
                 <Link href="/">Log In</Link>
                 <p>|</p>
                 <Link href="/">Sign Up</Link>
@@ -22,7 +22,8 @@ const Navbar = () => {
                         {/* Logo */}
                         <div className="flex items-center">
                             <Link href="/">
-                                <Image src={logo} alt="Servotor Logo" width={150} height={50} className="cursor-pointer" />
+                                {/* <Image src={logo} alt="Servotor Logo" width={150} height={50} className="cursor-pointer" /> */}
+                                <p className='text-3xl text-teal-700 font-bold'>Servotor</p>
                             </Link>
                         </div>
                         
