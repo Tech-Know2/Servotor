@@ -6,7 +6,7 @@ import logo from '../../public/images/Servotor Full.png';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='pb-[1%]'>
             {/* Top-right login/signup links */}
             <div className="flex flex-row gap-6 justify-end px-[5%] py-[0.5%]">
                 <Link href="/">Log In</Link>
@@ -15,7 +15,7 @@ const Navbar = () => {
             </div>
 
             {/* Main navigation bar */}
-            <div className="w-[90%] mx-auto bg-white rounded-lg shadow">
+            <div className="w-[90%] mx-auto bg-white rounded-lg shadow-lg">
                 <div className="max-w-7xl mx-auto">
                     <div className="relative flex items-center justify-between h-16">
                         

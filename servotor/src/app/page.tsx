@@ -3,6 +3,7 @@ import Hero from "./hero";
 import Why from "./why";
 import Plans from "./plans";
 import Panels from "./panels";
+import Footer from "./footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Why />
       <Plans />
       <Panels />
+      <Footer />
     </div>
   );
 }
