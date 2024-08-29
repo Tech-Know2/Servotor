@@ -13,13 +13,19 @@ export default function Plans() {
                             <p className="text-xl font-bold text-teal-800">Web Hosting</p>
                             <p className="text-xl font-bold text-teal-800">___</p>
                             <p className="text-md text-slate-800 mt-[5%] mb-[5%]">Power your websites with the best in class hardware and software. Deploy with ease and comfort knowing that its safe and protected.</p>
-                            <Link href="/" className="hover:underline"> Plans Starting at: $6.99 &rsaquo;</Link>
+                            <div className="flex flex-col">
+                                <Link href="/" className="hover:underline"> Learn More: &rsaquo;</Link>
+                                <Link href="/" className="hover:underline"> Plans Starting at: $6.99 &rsaquo;</Link>
+                            </div>
                         </div>
                         <div className="bg-slate-100 rounded-lg shadow px-[5%] py-[5%]">
                             <p className="text-xl font-bold text-teal-800">Game Hosting</p>
                             <p className="text-xl font-bold text-teal-800">___</p>
                             <p className="text-md text-slate-800 mt-[5%] mb-[5%]">Manage countless games and servers from a single control panel. Enjoy the power and freedom of affordable and flexible pricing while not sacraficing UI or UX.</p>
-                            <Link href="/" className="hover:underline"> Plans Starting at: $2 &rsaquo;</Link>
+                            <div className="flex flex-col">
+                                <Link href="/" className="hover:underline"> Learn More: &rsaquo;</Link>
+                                <Link href="/" className="hover:underline"> Plans Starting at: $2 &rsaquo;</Link>
+                            </div>
                         </div>
                     </div>
                     <div className="flex flex-col w-full gap-10">
@@ -27,13 +33,19 @@ export default function Plans() {
                             <p className="text-xl font-bold text-teal-800">AI</p>
                             <p className="text-xl font-bold text-teal-800">___</p>
                             <p className="text-md text-slate-800 mt-[5%] mb-[5%]">With one subscription get access to over 1000+ AI models with countless different modals, capabilites, features. Enjoy the convience of one, while still getting all.</p>
-                            <Link href="/" className="hover:underline"> Coming Soon: &rsaquo;</Link>
+                            <div className="flex flex-col">
+                                <Link href="/" className="hover:underline"> Learn More: &rsaquo;</Link>
+                                <Link href="/" className="hover:underline"> Coming Soon: &rsaquo;</Link>
+                            </div>
                         </div>
                         <div className="bg-slate-100 rounded-lg shadow px-[5%] py-[5%]">
                             <p className="text-xl font-bold text-teal-800">Cloud Storage</p>
                             <p className="text-xl font-bold text-teal-800">___</p>
                             <p className="text-md text-slate-800 mt-[5%] mb-[5%]">Store your data with ease. Drag and drop your files into secure storage powered by next generation technology.</p>
-                            <Link href="/" className="hover:underline"> Coming Soon: &rsaquo;</Link>
+                            <div className="flex flex-col">
+                                <Link href="/" className="hover:underline"> Learn More: &rsaquo;</Link>
+                                <Link href="/" className="hover:underline"> Coming Soon: &rsaquo;</Link>
+                            </div>
                         </div>
                     </div>
                     <div className="">
@@ -41,7 +53,10 @@ export default function Plans() {
                             <p className="text-xl font-bold text-teal-800">VPS</p>
                             <p className="text-xl font-bold text-teal-800">___</p>
                             <p className="text-md text-slate-800 mt-[5%] mb-[5%]">Instantly deploy a VM with over 500+ different OS and countless one click applications. Enjoy low pricing, security, and latest generation hardware and software.</p>
-                            <Link href="/" className="hover:underline"> Coming Soon: &rsaquo;</Link>
+                            <div className="flex flex-col">
+                                <Link href="/" className="hover:underline"> Learn More: &rsaquo;</Link>
+                                <Link href="/" className="hover:underline"> Coming Soon: &rsaquo;</Link>
+                            </div>
                         </div>
                     </div>
                 </div>

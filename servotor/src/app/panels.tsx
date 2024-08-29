@@ -13,10 +13,7 @@ export default function Panels() {
 
         <div className="bg-white rounded-lg shadow-lg w-[80%] p-[5%] mt-8 flex flex-col md:flex-row justify-between items-start">
           <div className="flex flex-col w-full md:w-[60%]">
-            <h2 className="text-3xl font-bold text-slate-800 mb-4">
-              Powerful and Modern{" "}
-              <span className="text-teal-700">Panels</span> for every{" "}
-              <span className="text-teal-700">Solution</span>
+            <h2 className="text-3xl font-bold text-slate-800 mb-4"><span className="text-teal-700">Powerful </span> & <span className="text-teal-700">Modern </span>{" "} panels for every{" "}<span className="text-teal-700">Solution</span>
             </h2>
             <h3 className="text-xl text-slate-600 mb-4">
               Custom, Open Source, Web Panels specially crafted for each solution
