@@ -1,6 +1,8 @@
 import Navbar from "./navbar";
 import Hero from "./hero";
 import Why from "./why";
+import Plans from "./plans";
+import Panels from "./panels";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Why />
+      <Plans />
+      <Panels />
     </div>
   );
 }
