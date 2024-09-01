@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { FaInstagram,FaDiscord, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 export default function Footer() {
   return (
@@ -7,6 +10,23 @@ export default function Footer() {
         <div className="w-[40%] pr-[5%]">
             <p className='text-3xl text-teal-700 font-bold pb-5'>Servotor</p>
             <p className="text-md text-slate-800"> Get all of your cloud compute needs in one place. Enjoy open source panels and instant account and product creation and provisioning.</p>
+            <div className="pt-[5%] flex flex-row gap-3">
+                <Link href="/">
+                    <FaInstagram className="text-3xl text-teal-800" />
+                </Link>
+                <Link href="/">
+                    <FaDiscord className="text-3xl text-teal-800" />
+                </Link>
+                <Link href="/">
+                    <FaXTwitter className="text-3xl text-teal-800" />
+                </Link>
+                <Link href="/">
+                    <FaFacebook className="text-3xl text-teal-800" />
+                </Link>
+                <Link href="/">
+                    <FaYoutube className="text-3xl text-teal-800" />
+                </Link>
+            </div>
         </div>
         <div className="w-[15%]">
             <p className='text-1xl text-teal-700 font-bold'>Quick Links</p>
@@ -19,7 +39,7 @@ export default function Footer() {
             <p className='text-1xl text-teal-700 font-bold'>Products</p>
             <p className="text-md text-teal-700 font-bold">___</p>
             <div className="pt-4 flex flex-col">
-                <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Game Servers</Link>
+                <Link href="/game-server" className="text-md text-slate-800 py-1 hover:underline">Game Servers</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Web Servers</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">VPS</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Storage</Link>
@@ -30,8 +50,8 @@ export default function Footer() {
             <p className='text-1xl text-teal-700 font-bold'>Resources</p>
             <p className="text-md text-teal-700 font-bold">___</p>
             <div className="pt-4 flex flex-col">
-                <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Knowledge Base</Link>
-                <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Road Map</Link>
+                <Link href="https://imported-armchair-30b.notion.site/fff973c2eaf68053858afa980365e01a?v=a679e356900a47f78527608e3af2a9e0&pvs=4" className="text-md text-slate-800 py-1 hover:underline">Knowledge Base</Link>
+                <Link href="https://imported-armchair-30b.notion.site/87b9c54ad03a450593567d8e8e54c466?v=cd2815c463064385a964fc6ef8903198&pvs=4" className="text-md text-slate-800 py-1 hover:underline">Road Map</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Update Board</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Server Health Boards</Link>
             </div>

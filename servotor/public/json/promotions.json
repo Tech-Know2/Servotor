@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Effortless Control",
+        "image": "controlIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "Incredibly Customizable",
+        "image": "customIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "120+ Games",
+        "image": "gamesIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "Scalable & Secure",
+        "image": "scalableIcon.png",
+        "link": "/"
+    }
+]

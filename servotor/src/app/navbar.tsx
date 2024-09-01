@@ -29,7 +29,7 @@ const Navbar = () => {
                         
                         {/* Navigation links */}
                         <div className="hidden sm:flex sm:ml-6 flex-grow justify-center items-center gap-3">
-                            <Link href="/" className="text-black hover:bg-neutral-800 hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                            <Link href="/game-server" className="text-black hover:bg-neutral-800 hover:text-white px-3 py-2 rounded-md text-md font-medium">
                                 Game Servers
                             </Link>
                             <Link href="/" className="text-black hover:bg-neutral-800 hover:text-white px-3 py-2 rounded-md text-md font-medium">

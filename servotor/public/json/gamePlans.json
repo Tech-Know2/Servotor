@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Bronze",
+        "monthly": "$2",
+        "annually": "$1.49",
+        "memory": "512 MB",
+        "storage": "10 GB SSD",
+        "link": ""
+    },
+    {
+        "name": "Silver",
+        "monthly": "$3.49",
+        "annually": "$2.99",
+        "memory": "1 GB",
+        "storage": "20 GB SSD",
+        "link": ""
+    },
+    {
+        "name": "Gold",
+        "monthly": "$7.49",
+        "annually": "$6.49",
+        "memory": "2 GB",
+        "storage": "30 GB SSD",
+        "link": ""
+    },
+    {
+        "name": "Platinum",
+        "monthly": "$14.99",
+        "annually": "$12.99",
+        "memory": "4 GB",
+        "storage": "40 GB SSD",
+        "link": ""
+    },
+    {
+        "name": "Diamond",
+        "monthly": "$29.99",
+        "annually": "$27.59",
+        "memory": "8 GB",
+        "storage": "60 GB SSD",
+        "link": ""
+    },
+    {
+        "name": "Custom",
+        "monthly": "Varies",
+        "annually": "Varies",
+        "memory": "Varies",
+        "storage": "Varies",
+        "link": ""
+    }
+]

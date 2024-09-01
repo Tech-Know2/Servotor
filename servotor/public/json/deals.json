@@ -2,12 +2,12 @@
     {
         "label": "Web Servers",
         "image": "serverLogo.png",
-        "link": "/web-servers"
+        "link": "/web-server"
     },
     {
         "label": "Game Servers",
         "image": "gameServerLogo.png",
-        "link": "/game-servers"
+        "link": "/game-server"
     },
     {
         "label": "Mautic",
