@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Starter",
+        "monthly": "$6.99",
+        "annually": "$5.49",
+        "memory": "1 GB",
+        "storage": "5 GB SSD",
+        "bandwidth": "200 Mbps",
+        "domain": "No Free Domain",
+        "email": "Unlimited Emails",
+        "DDOS": "DDOS Protection",
+        "BackUps": "Configurable Backups",
+        "link": ""
+    },
+    {
+        "name": "Pro",
+        "monthly": "$11.99",
+        "annually": "$10.49",
+        "memory": "2 GB",
+        "storage": "10 GB SSD",
+        "bandwidth": "400 Mbps",
+        "domain": "No Free Domain",
+        "email": "Unlimited Emails",
+        "DDOS": "DDOS Protection",
+        "BackUps": "Configurable Backups",
+        "link": ""
+    },
+    {
+        "name": "Enterprise",
+        "monthly": "$19.99",
+        "annually": "$18.49",
+        "memory": "4 GB",
+        "storage": "30 GB SSD",
+        "bandwidth": "1 Gbps",
+        "domain": "Free Domain",
+        "email": "Unlimited Emails",
+        "DDOS": "DDOS Protection",
+        "BackUps": "Configurable Backups",
+        "link": ""
+    },
+    {
+        "name": "Custom",
+        "monthly": "Varies",
+        "annually": "Varies",
+        "memory": "Varies",
+        "storage": "Varies",
+        "bandwidth": "Varies",
+        "domain": "Varies",
+        "email": "Varies",
+        "DDOS": "Varies",
+        "BackUps": "Varies",
+        "link": ""
+    }
+]

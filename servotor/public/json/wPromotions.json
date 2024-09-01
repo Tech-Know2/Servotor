@@ -1,0 +1,22 @@
+[
+    {
+        "label": "DNS Management",
+        "image": "controlIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "Modern Panel",
+        "image": "customIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "Unlimited Sites",
+        "image": "mauticLogo.png",
+        "link": "/"
+    },
+    {
+        "label": "Scalable & Secure",
+        "image": "scalableIcon.png",
+        "link": "/"
+    }
+]

@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import Plan from "../../../public/json/gamePlans.json";
+import Plan from "../../../public/json/webPlans.json";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -10,6 +10,11 @@ interface Plans {
     annually: string;
     memory: string;
     storage: string;
+    bandwidth: string;
+    domain: string;
+    email: string;
+    DDOS: string;
+    BackUps: string;
     link: string;
 }
 
@@ -65,8 +70,13 @@ export default function Plans() {
                         <div className="flex flex-col">
                             <p className="text-2xl font-bold mb-2">{card.name}</p>
                             <p className="text-2xl font-bold mb-2 pb-[3%]">_</p>
-                            <p className="text-lg text-gray-600 mb-2">Memory: {card.memory}</p>
-                            <p className="text-lg text-gray-600 mb-2">Storage: {card.storage}</p>
+                            <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Memory: </span>{card.memory}</p>
+                            <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Storage: </span>{card.storage}</p>
+                            {card.bandwidth && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Bandwidth: </span>{card.bandwidth}</p>}
+                            {card.domain && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Domain: </span>{card.domain}</p>}
+                            {card.email && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Email: </span>{card.email}</p>}
+                            {card.DDOS && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">DDOS Protection: </span>{card.DDOS}</p>}
+                            {card.BackUps && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Backups: </span>{card.BackUps}</p>}
                             <p className="text-xl font-semibold text-teal-700 py-[3%]">
                                 {pricingDuration === 'monthly' ? (
                                     `${card.monthly}`
@@ -77,11 +87,11 @@ export default function Plans() {
                                     </>
                                 )}
                             </p>
-                            <div className="mt-[2%]">
-                                <Link href="" className="bg-teal-700 hover:bg-teal-800 rounded-lg shadow-lg py-[1%] w-full text-white font-bold flex justify-center items-center text-center">
-                                    <p>Purchase Plan</p>
-                                </Link>
-                            </div>
+                        </div>
+                        <div className="mt-[2%]">
+                            <Link href={card.link || "#"} className="bg-teal-700 hover:bg-teal-800 rounded-lg shadow-lg py-[1%] w-full text-white font-bold flex justify-center items-center text-center">
+                                <p>Purchase Plan</p>
+                            </Link>
                         </div>
                     </div>
                 ))}
