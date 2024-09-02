@@ -2,6 +2,7 @@ import Navbar from "../navbar";
 import Footer from "../footer";
 import Hero from "./hero"
 import Plans from "./plans";
+import Apps from "./apps";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Plans />
+      <Apps />
       <Footer />
     </div>
   );

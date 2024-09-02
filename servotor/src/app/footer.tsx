@@ -75,7 +75,7 @@ export default function Footer() {
         <Link href="/" className="text-sm hover:underline">
             Privacy Policy
         </Link>
-        <p className="text-sm text-center">Built, Designed, and operated by Cooper Harris</p>
+        <p className="text-sm text-center">Built, Designed, and Operated by Cooper Harris</p>
         </div>
     </div>
   );

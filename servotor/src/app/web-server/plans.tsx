@@ -6,6 +6,8 @@ import Link from "next/link";
 
 interface Plans {
     name: string;
+    websites: string;
+    domains: string;
     monthly: string;
     annually: string;
     memory: string;
@@ -70,6 +72,8 @@ export default function Plans() {
                         <div className="flex flex-col">
                             <p className="text-2xl font-bold mb-2">{card.name}</p>
                             <p className="text-2xl font-bold mb-2 pb-[3%]">_</p>
+                            <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Websites: </span>{card.websites}</p>
+                            <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Domains: </span>{card.domains}</p>
                             <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Memory: </span>{card.memory}</p>
                             <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Storage: </span>{card.storage}</p>
                             {card.bandwidth && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Bandwidth: </span>{card.bandwidth}</p>}

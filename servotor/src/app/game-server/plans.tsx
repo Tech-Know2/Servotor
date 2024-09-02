@@ -10,6 +10,7 @@ interface Plans {
     annually: string;
     memory: string;
     storage: string;
+    bandwidth: string;
     link: string;
 }
 
@@ -67,6 +68,7 @@ export default function Plans() {
                             <p className="text-2xl font-bold mb-2 pb-[3%]">_</p>
                             <p className="text-lg text-gray-600 mb-2">Memory: {card.memory}</p>
                             <p className="text-lg text-gray-600 mb-2">Storage: {card.storage}</p>
+                            <p className="text-lg text-gray-600 mb-2">Bandwidth: {card.bandwidth}</p>
                             <p className="text-xl font-semibold text-teal-700 py-[3%]">
                                 {pricingDuration === 'monthly' ? (
                                     `${card.monthly}`

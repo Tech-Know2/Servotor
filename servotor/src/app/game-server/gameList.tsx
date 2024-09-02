@@ -14,7 +14,9 @@ export default function GameList() {
     const [visibleCount, setVisibleCount] = useState<number>(30);
 
     useEffect(() => {
-        setGameData(Plan);
+        // Sort the games alphabetically by name before setting the state
+        const sortedGames = [...Plan].sort((a, b) => a.name.localeCompare(b.name));
+        setGameData(sortedGames);
     }, []);
 
     // Filter games based on the search query
@@ -49,10 +51,8 @@ export default function GameList() {
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 w-[80%] mx-auto mb-[2%]">
                 {filteredGames.slice(0, visibleCount).map((card, index) => (
-                    <Link href="" className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border border-gray-200">
-                        <div key={index} className="">
-                            <p className="text-md text-slate-800 font-semibold">{card.name}</p>
-                        </div>
+                    <Link key={index} href="" className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border border-gray-200">
+                        <p className="text-md text-slate-800 font-semibold">{card.name}</p>
                     </Link>
                 ))}
             </div>
