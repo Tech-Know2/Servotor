@@ -1,8 +1,8 @@
 import Navbar from "../navbar";
-import Plans from "./plans";
-import Hero from "./hero";
-import GameList from "./gameList";
 import Footer from "../footer";
+import Hero from "./hero"
+import Plans from "./plans";
+import Apps from "./apps";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Plans />
-      <GameList />
+      <Apps />
       <Footer />
     </div>
   );
