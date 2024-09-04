@@ -41,9 +41,9 @@ export default function Footer() {
             <div className="pt-4 flex flex-col">
                 <Link href="/game-server" className="text-md text-slate-800 py-1 hover:underline">Game Servers</Link>
                 <Link href="/web-server" className="text-md text-slate-800 py-1 hover:underline">Web Servers</Link>
-                <Link href="/" className="text-md text-slate-800 py-1 hover:underline">VPS</Link>
-                <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Storage</Link>
-                <Link href="/" className="text-md text-slate-800 py-1 hover:underline">AI</Link>
+                <Link href="/vps" className="text-md text-slate-800 py-1 hover:underline">VPS</Link>
+                <Link href="/storage" className="text-md text-slate-800 py-1 hover:underline">Storage</Link>
+                <Link href="/ai" className="text-md text-slate-800 py-1 hover:underline">AI</Link>
             </div>
         </div>
         <div className="w-[25%]">

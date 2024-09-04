@@ -64,13 +64,13 @@ export default function Panels() {
 
             <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center">
               <Image
-                src="/images/virtfusion.png"
+                src="/images/virtualizorLogo.png"
                 alt="Pterodactyl Logo"
                 width={50}
                 height={50}
                 className="cursor-pointer mr-4"
               />
-              <p className="text-center">Virtfusion</p>
+              <p className="text-center">Virtualizor</p>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center">

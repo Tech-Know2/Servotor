@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Standard",
+        "monthly": "$14.99",
+        "annually": "$11.99",
+        "models": "40"
+    },
+    {
+        "name": "Pro",
+        "monthly": "$19.99",
+        "annually": "$17.77",
+        "models": "80"
+    },
+    {
+        "name": "Enterprise",
+        "monthly": "$29.99",
+        "annually": "$24.99",
+        "models": "All"
+        
+    }
+]
