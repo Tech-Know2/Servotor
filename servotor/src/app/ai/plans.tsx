@@ -9,6 +9,7 @@ interface Plans {
     monthly: string;
     annually: string;
     models: string;
+    requests: string;
 }
 
 export default function Plans() {
@@ -64,6 +65,7 @@ export default function Plans() {
                             <p className="text-2xl font-bold mb-2">{card.name}</p>
                             <p className="text-2xl font-bold mb-2 pb-[3%]">_</p>
                             <p className="text-lg text-gray-600 mb-2">Models: {card.models}</p>
+                            <p className="text-lg text-gray-600 mb-2">Requests: {card.requests}</p>
                             <p className="text-xl font-semibold text-teal-700 py-[3%]">
                                 {pricingDuration === 'monthly' ? (
                                     `${card.monthly}`

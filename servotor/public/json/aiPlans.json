@@ -3,19 +3,22 @@
         "name": "Standard",
         "monthly": "$14.99",
         "annually": "$11.99",
-        "models": "40"
+        "models": "40",
+        "requests": "1x"
     },
     {
         "name": "Pro",
         "monthly": "$19.99",
         "annually": "$17.77",
-        "models": "80"
+        "models": "80",
+        "requests": "2x"
     },
     {
         "name": "Enterprise",
         "monthly": "$29.99",
         "annually": "$24.99",
-        "models": "All"
+        "models": "All",
+        "requests": "4x"
         
     }
 ]

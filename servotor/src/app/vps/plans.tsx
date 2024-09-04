@@ -52,7 +52,7 @@ export default function ResourceSliders() {
             vcpu: pricingDuration === 'monthly' ? 10 : 8.5,
             memory: pricingDuration === 'monthly' ? 3 : 2.7,
             bandwidth: pricingDuration === 'monthly' ? 3 : 2.5,
-            storage: pricingDuration === 'monthly' ? 0.15 : 0.12
+            storage: pricingDuration === 'monthly' ? 0.6 : 0.05
         };
 
         // Calculate cost for vCPUs only above the first free one

@@ -1,22 +1,22 @@
 [
     {
-        "label": "",
-        "image": "",
+        "label": "Ease of Control",
+        "image": "controlIcon.png",
         "link": "/"
     },
     {
-        "label": "",
-        "image": "",
+        "label": "Modern Panel",
+        "image": "customIcon.png",
         "link": "/"
     },
     {
-        "label": "",
-        "image": "",
+        "label": "Powerful Apps",
+        "image": "mauticLogo.png",
         "link": "/"
     },
     {
-        "label": "",
-        "image": "",
+        "label": "Scalable & Secure",
+        "image": "scalableIcon.png",
         "link": "/"
     }
 ]

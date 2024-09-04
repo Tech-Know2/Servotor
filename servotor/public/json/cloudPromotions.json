@@ -1,21 +1,21 @@
 [
     {
-        "label": "",
-        "image": "",
+        "label": "Secure",
+        "image": "customIcon.png",
         "link": "/"
     },
     {
-        "label": "",
-        "image": "",
+        "label": "Scalable",
+        "image": "scalableIcon.png",
         "link": "/"
     },
     {
-        "label": "",
-        "image": "",
+        "label": "Easy to Use",
+        "image": "controlIcon.png",
         "link": "/"
     },
     {
-        "label": "",
+        "label": "Affordable",
         "image": "",
         "link": "/"
     }

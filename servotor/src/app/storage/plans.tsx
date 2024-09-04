@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function Plans() {
     const [pricingDuration, setPricingDuration] = useState<'monthly' | 'annually'>('monthly');
     const [storage, setStorage] = useState(100); // Starting at 100GB
+    const [storageType, setStorageType] = useState<'SSD' | 'HDD'>('SSD');
 
     const handlePricingChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPricingDuration(event.target.value as 'monthly' | 'annually');
@@ -15,8 +16,12 @@ export default function Plans() {
         setStorage(parseInt(event.target.value));
     };
 
+    const handleStorageTypeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setStorageType(event.target.value as 'SSD' | 'HDD');
+    };
+
     const calculateCost = () => {
-        const costPerGB = pricingDuration === 'monthly' ? 0.15 : 0.1;
+        const costPerGB = storageType === 'SSD' ? (pricingDuration === 'monthly' ? 0.06 : 0.05) : (pricingDuration === 'monthly' ? 0.05 : 0.04);
         return (storage * costPerGB).toFixed(2);
     };
 
@@ -27,7 +32,7 @@ export default function Plans() {
                     <p className="bg-white shadow-lg rounded-lg px-[1%] py-[0.5%] w-fit text-slate-800 font-bold text-center uppercase">Cloud Storage Product Coming Soon</p>
                     <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Select What Works for You</h1>
                 </div>
-                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto">
+                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto mb-8">
                     <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
                         <input 
                             type="radio" 
@@ -51,6 +56,30 @@ export default function Plans() {
                         Annually
                     </label>
                 </div>
+                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto mb-8">
+                    <label className={`px-4 py-2 cursor-pointer font-bold ${storageType === 'SSD' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                        <input 
+                            type="radio" 
+                            name="storage-type" 
+                            value="SSD" 
+                            checked={storageType === 'SSD'} 
+                            onChange={handleStorageTypeChange}
+                            className="hidden"
+                        />
+                        SSD
+                    </label>
+                    <label className={`px-4 py-2 cursor-pointer font-bold ${storageType === 'HDD' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                        <input 
+                            type="radio" 
+                            name="storage-type" 
+                            value="HDD" 
+                            checked={storageType === 'HDD'} 
+                            onChange={handleStorageTypeChange}
+                            className="hidden"
+                        />
+                        HDD
+                    </label>
+                </div>
             </div>
 
             <div className="text-center w-[80%] mx-auto"> {/* Center the content and make it 80% of the width */}
@@ -62,7 +91,7 @@ export default function Plans() {
                         id="storage-slider"
                         type="range"
                         min={100}
-                        max={10240} // 10TB in GB
+                        max={5120} // 5TB in GB
                         step={100}
                         value={storage}
                         onChange={handleStorageChange}
@@ -70,11 +99,11 @@ export default function Plans() {
                     />
                     <div className="relative w-full mt-4">
                         <div className="absolute left-0 top-0 flex justify-between w-full">
-                            {[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000].map((value, i) => (
+                            {[1000, 2000, 3000, 4000, 5000].map((value, i) => (
                                 <span
                                     key={i}
                                     className="text-gray-700 text-sm"
-                                    style={{ position: 'absolute', left: `${((value - 100) / (10240 - 100)) * 100}%`, transform: 'translateX(-50%)' }}
+                                    style={{ position: 'absolute', left: `${((value - 100) / (5120 - 100)) * 100}%`, transform: 'translateX(-50%)' }}
                                 >
                                     {value / 1000}TB
                                 </span>

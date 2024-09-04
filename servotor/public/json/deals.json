@@ -10,9 +10,9 @@
         "link": "/game-server"
     },
     {
-        "label": "Mautic",
-        "image": "mauticLogo.png",
-        "link": "/mautic"
+        "label": "Cloud AI",
+        "image": "controlIcon.png",
+        "link": "/ai"
     },
     {
         "label": "VPS",

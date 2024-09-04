@@ -1,12 +1,12 @@
 [
     {
         "label": "110 AI Models",
-        "image": "",
+        "image": "controlIcon.png",
         "link": "/"
     },
     {
         "label": "Price of OpenAI Plus",
-        "image": "",
+        "image": "customIcon.png",
         "link": "/"
     },
     {
@@ -16,7 +16,7 @@
     },
     {
         "label": "Cloud Based",
-        "image": "",
+        "image": "serverLogo.png",
         "link": "/"
     }
 ]
