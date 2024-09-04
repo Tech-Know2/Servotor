@@ -26,7 +26,7 @@ export default function Hero() {
             </div>
             <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-[8%]">
                 {dealData.map((card, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200">
+                    <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
                         <div className="flex items-center">
                             <Image src={`/images/${card.image}`} alt="Logo" width={50} height={30} className="mr-4" />
                             <div>

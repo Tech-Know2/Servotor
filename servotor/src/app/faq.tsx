@@ -44,13 +44,14 @@ const faqSections: FAQSection[] = [
     title: "AI",
     items: [
       { question: "How many models can I access?", answer: "With one subscription get access to over a thousand AI models including GPT-4o, Llama 3, and more." },
+      { question: "How do I use it?", answer: "You interact with the models through your user panel with us." },
     ],
   },
   {
     title: "VPS",
     items: [
       { question: "What is a VPS?", answer: "A VPS is a Virtual Private Server that provides you with dedicated resources." },
-      { question: "How do I manage my VPS?", answer: "You can manage your VPS via SSH or our through our customized Virtfusioncontrol panel." },
+      { question: "How do I manage my VPS?", answer: "You can manage your VPS via SSH or our through our customized Virtualizor control panel." },
       { question: "How do I upgrade my VPS?", answer: "Upgrades can be done through your account dashboard." },
     ],
   },

@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import deals from "../../public/json/deals.json";
 import React, { useState, useEffect } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
 
 interface DealData {
@@ -30,7 +30,7 @@ export default function Hero() {
                             For <span className="text-teal-700">Everyone</span>
                         </h1>
                         <div className="flex space-x-4">
-                            <button className="bg-teal-700 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-800 transition">
+                            <button className="bg-teal-700 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-700 transition">
                                 Get Started
                             </button>
                             <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-700 hover:text-white transition">
@@ -52,16 +52,23 @@ export default function Hero() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mx-[10%] mb-[2%]">
                 {dealData.map((card, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200">
-                        <div className="flex flex-row">
-                            <Image src={`/images/${card.image}`} alt="Logo" width={50} height={30} className="mr-[10%]" />
-                            <div>
+                    <div
+                        key={index}
+                        className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl w-full max-w-xs mx-auto"
+                    >
+                        <Link href={`${card.link}`} className="flex flex-row items-start">
+                            <Image
+                                src={`/images/${card.image}`}
+                                alt="Logo"
+                                width={50}
+                                height={30}
+                                className="mb-4"
+                            />
+                            <div className=" pl-[5%] flex flex-col">
                                 <p className="text-xl font-semibold text-teal-700">{card.label}</p>
-                                <Link href={`${card.link}`} className="text-teal-800 hover:underline mt-auto">
-                                    Learn more &rsaquo;
-                                </Link>
+                                <p className="text-teal-700 hover:underline mt-2">Learn more &rsaquo;</p>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 ))}
             </div>

@@ -12,19 +12,19 @@ export default function Footer() {
             <p className="text-md text-slate-800"> Get all of your cloud compute needs in one place. Enjoy open source panels and instant account and product creation and provisioning.</p>
             <div className="pt-[5%] flex flex-row gap-3">
                 <Link href="/">
-                    <FaInstagram className="text-3xl text-teal-800" />
+                    <FaInstagram className="text-3xl text-teal-700" />
                 </Link>
                 <Link href="/">
-                    <FaDiscord className="text-3xl text-teal-800" />
+                    <FaDiscord className="text-3xl text-teal-700" />
                 </Link>
                 <Link href="/">
-                    <FaXTwitter className="text-3xl text-teal-800" />
+                    <FaXTwitter className="text-3xl text-teal-700" />
                 </Link>
                 <Link href="/">
-                    <FaFacebook className="text-3xl text-teal-800" />
+                    <FaFacebook className="text-3xl text-teal-700" />
                 </Link>
                 <Link href="/">
-                    <FaYoutube className="text-3xl text-teal-800" />
+                    <FaYoutube className="text-3xl text-teal-700" />
                 </Link>
             </div>
         </div>

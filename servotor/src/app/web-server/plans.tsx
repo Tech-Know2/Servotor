@@ -68,7 +68,7 @@ export default function Plans() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[80%] mx-auto mb-[2%]">
                 {dealData.map((card, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200">
+                    <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
                         <div className="flex flex-col">
                             <p className="text-2xl font-bold mb-2">{card.name}</p>
                             <p className="text-2xl font-bold mb-2 pb-[3%]">_</p>

@@ -6,10 +6,10 @@ export default function Panels() {
   return (
     <div className="bg-slate-100 min-h-screen mt-[5%]">
       <div className="flex flex-col w-full h-full items-center">
-        <h1 className="text-3xl text-center font-bold text-teal-800">
+        <h1 className="text-3xl text-center font-bold text-teal-700">
           Cutting Edge Web Panel Integrations
         </h1>
-        <h1 className="text-3xl text-center font-bold text-teal-800">___</h1>
+        <h1 className="text-3xl text-center font-bold text-teal-700">___</h1>
 
         <div className="bg-white rounded-lg shadow-lg w-[80%] p-[5%] mt-8 flex flex-col md:flex-row justify-between items-start">
           <div className="flex flex-col w-full md:w-[60%]">
@@ -25,7 +25,7 @@ export default function Panels() {
               <li>Endless functionality and applications</li>
             </ul>
             <div className="flex space-x-4 pt-[5%]">
-              <button className="bg-teal-700 text-white py-2 px-4 rounded-md text-md font-medium hover:bg-teal-800 transition">
+              <button className="bg-teal-700 text-white py-2 px-4 rounded-md text-md font-medium hover:bg-teal-700 transition">
                 Get Started
               </button>
               <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-2 px-4 rounded-md text-md font-medium hover:bg-teal-700 hover:text-white transition">
@@ -39,7 +39,7 @@ export default function Panels() {
         <div className="w-full mt-[2%]">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mx-[10%] mb-[2%]">
             {/* Panel Card */}
-            <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center transition-transform transform hover:scale-105 hover:shadow-2xl">
               <Image
                 src="/images/pteroLogo.png"
                 alt="Pterodactyl Logo"
@@ -51,7 +51,7 @@ export default function Panels() {
             </div>
 
             {/* Repeat for other cards */}
-            <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center transition-transform transform hover:scale-105 hover:shadow-2xl">
               <Image
                 src="/images/cyberpanel.png"
                 alt="Pterodactyl Logo"
@@ -62,7 +62,7 @@ export default function Panels() {
               <p className="text-center">CyberPanel</p>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center transition-transform transform hover:scale-105 hover:shadow-2xl">
               <Image
                 src="/images/virtualizorLogo.png"
                 alt="Pterodactyl Logo"
@@ -73,7 +73,7 @@ export default function Panels() {
               <p className="text-center">Virtualizor</p>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-left border border-gray-200 flex items-center justify-center transition-transform transform hover:scale-105 hover:shadow-2xl">
               <Image
                 src="/images/openWeb.png"
                 alt="Pterodactyl Logo"

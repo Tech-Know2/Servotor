@@ -44,13 +44,34 @@ const Navbar = () => {
                             <Link href="/ai" className="text-black hover:bg-neutral-800 hover:text-white px-3 py-2 rounded-md text-md font-medium">
                                 AI
                             </Link>
-                            <Link href="/" className="text-black hover:bg-neutral-800 hover:text-white px-3 py-2 rounded-md text-md font-medium">
-                                Resources
-                            </Link>
+                            {/* Resources Dropdown */}
+                            <div className="relative">
+                                <div className="group inline-block">
+                                    <button
+                                        className="text-black hover:bg-neutral-800 hover:text-white px-3 py-2 rounded-md text-md font-medium focus:outline-none"
+                                    >
+                                        Resources
+                                    </button>
+                                    <div className="absolute left-0 hidden group-hover:block bg-white rounded-md shadow-lg py-2 z-10">
+                                        <Link
+                                            href="https://imported-armchair-30b.notion.site/fff973c2eaf68053858afa980365e01a?v=a679e356900a47f78527608e3af2a9e0&pvs=4"
+                                            className="block px-4 py-2 text-black hover:bg-neutral-800 hover:text-white"
+                                        >
+                                            Knowledge Base
+                                        </Link>
+                                        <Link
+                                            href="https://imported-armchair-30b.notion.site/87b9c54ad03a450593567d8e8e54c466?v=cd2815c463064385a964fc6ef8903198&pvs=4"
+                                            className="block px-4 py-2 text-black hover:bg-neutral-800 hover:text-white"
+                                        >
+                                            Road Map
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Right-side panel link */}
-                        <div className="flex items-center sm:ml-6 bg-teal-700 px-4 py-1 rounded-md hover:bg-teal-800 hover:text-white font-semibold text-white">
+                        <div className="flex items-center sm:ml-6 bg-teal-700 px-4 py-1 rounded-md hover:bg-teal-700 hover:text-white font-semibold text-white">
                             <Link href="/">Your Panel</Link>
                         </div>
                     </div>

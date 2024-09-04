@@ -53,7 +53,7 @@ export default function Apps() {
             <div className="w-full mt-[2%]">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mx-[10%] mb-[2%]">
                     {appData.map((card, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200">
+                        <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
                             <div className="text-center">
                                 <p className="text-xl font-semibold text-teal-700 py-1">{card.name}</p>
                             </div>

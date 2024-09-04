@@ -23,8 +23,8 @@ export default function Why() {
     return (
         <div className="bg-slate-200 min-h-screen flex justify-center pt-[5%]">
             <div className="flex flex-col w-full h-full items-center">
-            <h1 className="text-3xl text-center font-bold text-teal-800">Why Servotor?</h1>
-            <h1 className="text-3xl text-center font-bold text-teal-800">___</h1>
+            <h1 className="text-3xl text-center font-bold text-teal-700">Why Servotor?</h1>
+            <h1 className="text-3xl text-center font-bold text-teal-700">___</h1>
             
             <div className="bg-white rounded-lg shadow-lg w-[80%] p-[5%] mt-8 flex flex-col md:flex-row justify-between items-start">
                 {/* Left side content */}
@@ -37,7 +37,7 @@ export default function Why() {
                     </ul>
 
                     <div className="flex space-x-4 pt-[5%]">
-                        <button className="bg-teal-700 text-white py-2 px-4 rounded-md text-md font-medium hover:bg-teal-800 transition">
+                        <button className="bg-teal-700 text-white py-2 px-4 rounded-md text-md font-medium hover:bg-teal-700 transition">
                             Get Started
                         </button>
                         <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-2 px-4 rounded-md text-md font-medium hover:bg-teal-700 hover:text-white transition">
@@ -56,7 +56,7 @@ export default function Why() {
             <div className="w-full mt-[2%]">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mx-[10%] mb-[2%]">
                     {whyData.map((card, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200">
+                        <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
                             <div>
                                 <p className="text-xl font-semibold text-teal-700 py-1">{card.header}</p>
                                 <p className="text-md font-semibold text-black py-1">{card.subHeader}</p>

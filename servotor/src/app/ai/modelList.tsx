@@ -37,7 +37,7 @@ export default function ModelList() {
 
     return (
         <div className="bg-slate-100 min-h-screen py-[3%]">
-            <h1 className="text-4xl text-teal-700 font-bold text-center mb-6">Games We Support</h1>
+            <h1 className="text-4xl text-teal-700 font-bold text-center mb-6">Models We Operate</h1>
             
             <div className="flex justify-center mb-6">
                 <input
@@ -51,7 +51,7 @@ export default function ModelList() {
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 w-[80%] mx-auto mb-[2%]">
                 {filteredGames.slice(0, visibleCount).map((card, index) => (
-                    <Link key={index} href="" className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border border-gray-200">
+                    <Link key={index} href="" className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
                         <p className="text-md text-slate-800 font-semibold">{card.name}</p>
                     </Link>
                 ))}
