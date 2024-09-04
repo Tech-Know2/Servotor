@@ -30,10 +30,10 @@ export default function Hero() {
                             For <span className="text-teal-700">Everyone</span>
                         </h1>
                         <div className="flex space-x-4">
-                            <button className="bg-teal-700 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-700 transition">
+                            <button className="bg-teal-700 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-800 transition">
                                 Get Started
                             </button>
-                            <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-700 hover:text-white transition">
+                            <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-800 hover:text-white transition">
                                 Learn More
                             </button>
                         </div>

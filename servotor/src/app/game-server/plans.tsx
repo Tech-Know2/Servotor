@@ -1,8 +1,9 @@
-"use client"
+"use client";
 
 import Plan from "../../../public/json/gamePlans.json";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface Plans {
     name: string;
@@ -35,7 +36,11 @@ export default function Plans() {
                     <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Select What Works for You</h1>
                 </div>
                 <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto">
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                    <motion.label
+                        className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                        animate={{ scale: pricingDuration === 'monthly' ? 1.1 : 1 }}
+                        transition={{ duration: 0.3 }}
+                    >
                         <input 
                             type="radio" 
                             name="pricing-toggle" 
@@ -45,8 +50,12 @@ export default function Plans() {
                             className="hidden"
                         />
                         Monthly
-                    </label>
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                    </motion.label>
+                    <motion.label
+                        className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                        animate={{ scale: pricingDuration === 'annually' ? 1.1 : 1 }}
+                        transition={{ duration: 0.3 }}
+                    >
                         <input 
                             type="radio" 
                             name="pricing-toggle" 
@@ -56,7 +65,7 @@ export default function Plans() {
                             className="hidden"
                         />
                         Annually
-                    </label>
+                    </motion.label>
                 </div>
             </div>
 
@@ -80,7 +89,7 @@ export default function Plans() {
                                 )}
                             </p>
                             <div className="mt-[2%]">
-                                <Link href="" className="bg-teal-700 hover:bg-teal-800 rounded-lg shadow-lg py-[1%] w-full text-white font-bold flex justify-center items-center text-center">
+                                <Link href={card.link || "#"} className="bg-teal-700 hover:bg-teal-800 rounded-lg shadow-lg py-[1%] w-full text-white font-bold flex justify-center items-center text-center">
                                     <p>Purchase Plan</p>
                                 </Link>
                             </div>

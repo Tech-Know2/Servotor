@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Plans() {
     const [pricingDuration, setPricingDuration] = useState<'monthly' | 'annually'>('monthly');
@@ -33,7 +34,11 @@ export default function Plans() {
                     <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Select What Works for You</h1>
                 </div>
                 <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto mb-8">
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                    <motion.label
+                        className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                        animate={{ scale: pricingDuration === 'monthly' ? 1.1 : 1 }}
+                        transition={{ duration: 0.3 }}
+                    >
                         <input 
                             type="radio" 
                             name="pricing-toggle" 
@@ -43,8 +48,12 @@ export default function Plans() {
                             className="hidden"
                         />
                         Monthly
-                    </label>
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                    </motion.label>
+                    <motion.label
+                        className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                        animate={{ scale: pricingDuration === 'annually' ? 1.1 : 1 }}
+                        transition={{ duration: 0.3 }}
+                    >
                         <input 
                             type="radio" 
                             name="pricing-toggle" 
@@ -54,10 +63,14 @@ export default function Plans() {
                             className="hidden"
                         />
                         Annually
-                    </label>
+                    </motion.label>
                 </div>
                 <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto mb-8">
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${storageType === 'SSD' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                    <motion.label
+                        className={`px-4 py-2 cursor-pointer font-bold ${storageType === 'SSD' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                        animate={{ scale: storageType === 'SSD' ? 1.1 : 1 }}
+                        transition={{ duration: 0.3 }}
+                    >
                         <input 
                             type="radio" 
                             name="storage-type" 
@@ -67,8 +80,12 @@ export default function Plans() {
                             className="hidden"
                         />
                         SSD
-                    </label>
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${storageType === 'HDD' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                    </motion.label>
+                    <motion.label
+                        className={`px-4 py-2 cursor-pointer font-bold ${storageType === 'HDD' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                        animate={{ scale: storageType === 'HDD' ? 1.1 : 1 }}
+                        transition={{ duration: 0.3 }}
+                    >
                         <input 
                             type="radio" 
                             name="storage-type" 
@@ -78,7 +95,7 @@ export default function Plans() {
                             className="hidden"
                         />
                         HDD
-                    </label>
+                    </motion.label>
                 </div>
             </div>
 
@@ -86,7 +103,12 @@ export default function Plans() {
                 <label htmlFor="storage-slider" className="block mb-4 text-xl font-medium text-gray-700">
                     Select Storage: {storage}GB
                 </label>
-                <div className="w-[80%] mx-auto"> {/* Center the slider and make it 80% of the width */}
+                <motion.div
+                    className="w-[80%] mx-auto" // Center the slider and make it 80% of the width
+                    initial={{ opacity: 0.5 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                >
                     <input
                         id="storage-slider"
                         type="range"
@@ -110,7 +132,7 @@ export default function Plans() {
                             ))}
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 <p className="mt-4 text-2xl font-bold text-teal-700 pt-[5%]">
                     Cost: ${calculateCost()} {pricingDuration === 'monthly' ? "per month" : "per year"}
                 </p>

@@ -25,6 +25,8 @@ Selecting integrations and the tech stack for this project was probably the most
 - **OpenWeb UI:** OpenWebUI and Ollama was something that I found when I was scouring the extensions and marketplace for Paymenter. It allows me to host a bunch of AI models on my own server, like a thousand models, then allows me to sell subscriptions to my customer for access to these models. This means one subscription to every model they could ever need. Even more incredible is the fact that it is all open source. A huge win for the AI community as a whole. Thank you devs and project community.
 - **Virtualizor:** Is the only non-open source integration so far. They allow me to integrate with Paymenter for the deploying of virtual machines, applications, and bare metal servers. It is truely an awesome platform that I tend to make the fullest use of. The only down side of this platform is that it will cost me $18/mo. Which in the grand scheme of things, is pretty incredible.
 - **Google Sheets and Notion:** I have complied all of my research into a Google Sheet, while I am also building and linking my Knowledge Base in Notion. This will make it easier for customers to manage their purcahses and will help them get answers when they get stuck.
+- **Framer Motion:** I am using Framer Motion for some of the animations and effects show on the website.
+- **Google Sheets and Notion:** I have used ChatGPT to help debug and fix things when I do it wrong. I have also used ChatGPT to help me quickly make UIs and UXs, as well as helping me research and get answers to questions.
 
 ### Future Integrations
 

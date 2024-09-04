@@ -3,6 +3,7 @@
 import Plan from "../../../public/json/webPlans.json";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface Plans {
     name: string;
@@ -41,7 +42,11 @@ export default function Plans() {
                     <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Select What Works for You</h1>
                 </div>
                 <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto">
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                    <motion.label
+                        className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                        animate={{ scale: pricingDuration === 'monthly' ? 1.1 : 1 }}
+                        transition={{ duration: 0.3 }}
+                    >
                         <input 
                             type="radio" 
                             name="pricing-toggle" 
@@ -51,8 +56,12 @@ export default function Plans() {
                             className="hidden"
                         />
                         Monthly
-                    </label>
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
+                    </motion.label>
+                    <motion.label
+                        className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                        animate={{ scale: pricingDuration === 'annually' ? 1.1 : 1 }}
+                        transition={{ duration: 0.3 }}
+                    >
                         <input 
                             type="radio" 
                             name="pricing-toggle" 
@@ -62,13 +71,18 @@ export default function Plans() {
                             className="hidden"
                         />
                         Annually
-                    </label>
+                    </motion.label>
                 </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[80%] mx-auto mb-[2%]">
                 {dealData.map((card, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
+                    <motion.div
+                        key={index}
+                        className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
                         <div className="flex flex-col">
                             <p className="text-2xl font-bold mb-2">{card.name}</p>
                             <p className="text-2xl font-bold mb-2 pb-[3%]">_</p>
@@ -97,7 +111,7 @@ export default function Plans() {
                                 <p>Purchase Plan</p>
                             </Link>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>

@@ -25,10 +25,10 @@ export default function Panels() {
               <li>Endless functionality and applications</li>
             </ul>
             <div className="flex space-x-4 pt-[5%]">
-              <button className="bg-teal-700 text-white py-2 px-4 rounded-md text-md font-medium hover:bg-teal-700 transition">
+              <button className="bg-teal-700 text-white py-2 px-4 rounded-md text-md font-medium hover:bg-teal-800 transition">
                 Get Started
               </button>
-              <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-2 px-4 rounded-md text-md font-medium hover:bg-teal-700 hover:text-white transition">
+              <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-2 px-4 rounded-md text-md font-medium hover:bg-teal-800 hover:text-white transition">
                 Learn More
               </button>
             </div>
