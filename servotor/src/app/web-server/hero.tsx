@@ -1,6 +1,6 @@
 "use client"
 
-import promotions from "../../../public/json/gPromotions.json";
+import promotions from "../../../public/json/wPromotions.json";
 import React, { useState, useEffect } from "react";
 import Image from 'next/image';
 import Link from "next/link";
@@ -21,7 +21,7 @@ export default function Hero() {
     return (
         <div className="flex flex-col items-center justify-center mt-[10%] w-full">
             <div className="text-center mb-12">
-                <p className="text-teal-700 text-6xl font-bold">Game Servers</p>
+                <p className="text-teal-700 text-6xl font-bold">Web Servers</p>
                 <p className="text-teal-700 text-4xl mt-4">___</p>
             </div>
             <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-[8%]">

@@ -14,8 +14,8 @@ export default function Plans() {
                             <p className="text-xl font-bold text-teal-800">___</p>
                             <p className="text-md text-slate-800 mt-[5%] mb-[5%]">Power your websites with the best in class hardware and software. Deploy with ease and comfort knowing that its safe and protected.</p>
                             <div className="flex flex-col">
-                                <Link href="/" className="hover:underline"> Learn More: &rsaquo;</Link>
-                                <Link href="/" className="hover:underline"> Plans Starting at: $6.99 &rsaquo;</Link>
+                                <Link href="/web-server" className="hover:underline"> Learn More: &rsaquo;</Link>
+                                <Link href="/web-server" className="hover:underline"> Plans Starting at: $6.99 &rsaquo;</Link>
                             </div>
                         </div>
                         <div className="bg-slate-100 rounded-lg shadow px-[5%] py-[5%]">
@@ -23,8 +23,8 @@ export default function Plans() {
                             <p className="text-xl font-bold text-teal-800">___</p>
                             <p className="text-md text-slate-800 mt-[5%] mb-[5%]">Manage countless games and servers from a single control panel. Enjoy the power and freedom of affordable and flexible pricing while not sacraficing UI or UX.</p>
                             <div className="flex flex-col">
-                                <Link href="/" className="hover:underline"> Learn More: &rsaquo;</Link>
-                                <Link href="/" className="hover:underline"> Plans Starting at: $2 &rsaquo;</Link>
+                                <Link href="/game-server" className="hover:underline"> Learn More: &rsaquo;</Link>
+                                <Link href="/game-server" className="hover:underline"> Plans Starting at: $2 &rsaquo;</Link>
                             </div>
                         </div>
                     </div>

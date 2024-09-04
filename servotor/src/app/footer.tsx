@@ -40,7 +40,7 @@ export default function Footer() {
             <p className="text-md text-teal-700 font-bold">___</p>
             <div className="pt-4 flex flex-col">
                 <Link href="/game-server" className="text-md text-slate-800 py-1 hover:underline">Game Servers</Link>
-                <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Web Servers</Link>
+                <Link href="/web-server" className="text-md text-slate-800 py-1 hover:underline">Web Servers</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">VPS</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Storage</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">AI</Link>
@@ -75,7 +75,7 @@ export default function Footer() {
         <Link href="/" className="text-sm hover:underline">
             Privacy Policy
         </Link>
-        <p className="text-sm text-center">Built, Designed, and operated by Cooper Harris</p>
+        <p className="text-sm text-center">Built, Designed, and Operated by Cooper Harris</p>
         </div>
     </div>
   );

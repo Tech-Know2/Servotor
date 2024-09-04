@@ -1,0 +1,22 @@
+[
+    {
+        "label": "DNS Management",
+        "image": "controlIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "Modern Panel",
+        "image": "customIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "Powerful Web Apps",
+        "image": "mauticLogo.png",
+        "link": "/"
+    },
+    {
+        "label": "Scalable & Secure",
+        "image": "scalableIcon.png",
+        "link": "/"
+    }
+]
