@@ -94,7 +94,7 @@ export default function FAQ() {
                         setActiveQuestion(null);
                     }}
                     className={`px-4 py-2 rounded-lg text-white font-bold text-md shadow-lg ${
-                        activeSection === section.title ? "bg-teal-700" : "bg-slate-500"
+                        activeSection === section.title ? "bg-teal-700 hover:bg-teal-800" : "bg-slate-400 hover:bg-slate-500"
                     }`}
                     >
                     {section.title}
