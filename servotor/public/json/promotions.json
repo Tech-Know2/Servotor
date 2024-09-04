@@ -12,7 +12,7 @@
     {
         "label": "120+ Games",
         "image": "gamesIcon.png",
-        "link": "/game-server"
+        "link": "/"
     },
     {
         "label": "Scalable & Secure",

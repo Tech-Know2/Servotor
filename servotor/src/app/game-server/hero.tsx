@@ -1,6 +1,6 @@
 "use client"
 
-import promotions from "../../../public/json/gPromotions.json";
+import promotions from "../../../public/json/promotions.json";
 import React, { useState, useEffect } from "react";
 import Image from 'next/image';
 import Link from "next/link";
@@ -31,6 +31,9 @@ export default function Hero() {
                             <Image src={`/images/${card.image}`} alt="Logo" width={50} height={30} className="mr-4" />
                             <div>
                                 <p className="text-xl font-semibold text-teal-700">{card.label}</p>
+                                <Link href={`${card.link}`} className="text-teal-800 hover:underline mt-2">
+                                    Learn more &rsaquo;
+                                </Link>
                             </div>
                         </div>
                     </div>

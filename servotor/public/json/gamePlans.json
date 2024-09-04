@@ -5,7 +5,6 @@
         "annually": "$1.49",
         "memory": "512 MB",
         "storage": "10 GB SSD",
-        "bandwidth": "50 Mbps",
         "link": ""
     },
     {
@@ -14,7 +13,6 @@
         "annually": "$2.99",
         "memory": "1 GB",
         "storage": "20 GB SSD",
-        "bandwidth": "100 Mbps",
         "link": ""
     },
     {
@@ -23,7 +21,6 @@
         "annually": "$6.49",
         "memory": "2 GB",
         "storage": "30 GB SSD",
-        "bandwidth": "200 Mbps",
         "link": ""
     },
     {
@@ -32,7 +29,6 @@
         "annually": "$12.99",
         "memory": "4 GB",
         "storage": "40 GB SSD",
-        "bandwidth": "400 Mbps",
         "link": ""
     },
     {
@@ -41,7 +37,6 @@
         "annually": "$27.59",
         "memory": "8 GB",
         "storage": "60 GB SSD",
-        "bandwidth": "1 Gbps",
         "link": ""
     },
     {
@@ -50,7 +45,6 @@
         "annually": "Varies",
         "memory": "Varies",
         "storage": "Varies",
-        "bandwidth": "Varies",
         "link": ""
     }
 ]

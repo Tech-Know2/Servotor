@@ -4,7 +4,6 @@ import Why from "./why";
 import Plans from "./plans";
 import Panels from "./panels";
 import Footer from "./footer";
-import FAQ from "./faq";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
       <Why />
       <Plans />
       <Panels />
-      <FAQ />
       <Footer />
     </div>
   );

@@ -2,6 +2,7 @@
 
 import Plan from "../../../public/json/gamePlans.json";
 import React, { useState, useEffect } from "react";
+import Image from 'next/image';
 import Link from "next/link";
 
 interface Plans {
@@ -10,7 +11,6 @@ interface Plans {
     annually: string;
     memory: string;
     storage: string;
-    bandwidth: string;
     link: string;
 }
 
@@ -23,53 +23,33 @@ export default function Plans() {
     }, []);
 
     // Handle pricing duration change
-    const handlePricingChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handlePricingChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setPricingDuration(event.target.value as 'monthly' | 'annually');
     };
 
     return (
-        <div className="bg-slate-200 mt-[5%] p-8">
-            <div className="text-center mb-8 w-[80%] mx-auto">
-                <div className="flex flex-col items-center">
-                    <p className="bg-white shadow-lg rounded-lg px-[1%] py-[0.5%] w-fit text-slate-800 font-bold text-center uppercase">Plans for Everybody & Every Use</p>
-                    <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Select What Works for You</h1>
-                </div>
-                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto">
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
-                        <input 
-                            type="radio" 
-                            name="pricing-toggle" 
-                            value="monthly" 
-                            checked={pricingDuration === 'monthly'} 
-                            onChange={handlePricingChange}
-                            className="hidden"
-                        />
-                        Monthly
-                    </label>
-                    <label className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}>
-                        <input 
-                            type="radio" 
-                            name="pricing-toggle" 
-                            value="annually" 
-                            checked={pricingDuration === 'annually'} 
-                            onChange={handlePricingChange}
-                            className="hidden"
-                        />
-                        Annually
-                    </label>
-                </div>
+        <div className="bg-slate-200 min-h-screen mt-[5%] p-8">
+            <div className="text-center mb-8">
+                <label htmlFor="pricing-toggle" className="text-xl font-semibold text-gray-700 mr-4">Select Pricing Plan:</label>
+                <select 
+                    id="pricing-toggle"
+                    value={pricingDuration}
+                    onChange={handlePricingChange}
+                    className="p-2 border border-gray-300 rounded"
+                >
+                    <option value="monthly">Monthly</option>
+                    <option value="annually">Annually</option>
+                </select>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[80%] mx-auto mb-[2%]">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto mb-[2%]">
                 {dealData.map((card, index) => (
                     <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col text-left border border-gray-200">
                         <div className="flex flex-col">
                             <p className="text-2xl font-bold mb-2">{card.name}</p>
-                            <p className="text-2xl font-bold mb-2 pb-[3%]">_</p>
                             <p className="text-lg text-gray-600 mb-2">Memory: {card.memory}</p>
                             <p className="text-lg text-gray-600 mb-2">Storage: {card.storage}</p>
-                            <p className="text-lg text-gray-600 mb-2">Bandwidth: {card.bandwidth}</p>
-                            <p className="text-xl font-semibold text-teal-700 py-[3%]">
+                            <p className="text-xl font-semibold text-teal-700">
                                 {pricingDuration === 'monthly' ? (
                                     `${card.monthly}`
                                 ) : (
