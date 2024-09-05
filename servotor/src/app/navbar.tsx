@@ -54,6 +54,12 @@ const Navbar = () => {
                                     </button>
                                     <div className="absolute left-0 hidden group-hover:block bg-white rounded-md shadow-lg py-2 z-10">
                                         <Link
+                                            href="/about-us"
+                                            className="block px-4 py-2 text-black hover:bg-neutral-800 hover:text-white"
+                                        >
+                                            About Us
+                                        </Link>
+                                        <Link
                                             href="https://imported-armchair-30b.notion.site/fff973c2eaf68053858afa980365e01a?v=a679e356900a47f78527608e3af2a9e0&pvs=4"
                                             className="block px-4 py-2 text-black hover:bg-neutral-800 hover:text-white"
                                         >

@@ -5,8 +5,7 @@ import { useRef } from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
 import Hero from "./hero";
-import Plans from "./plans";
-import Apps from "./apps";
+import About from "./about";
 import Scroll from "../scrollAnimation";
 
 // Define the fadeIn animation
@@ -43,11 +42,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <Plans />
-      </Section>
-
-      <Section>
-        <Apps />
+        <About />
       </Section>
 
       <Footer />
