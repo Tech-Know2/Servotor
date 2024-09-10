@@ -65,6 +65,12 @@ const faqSections: FAQSection[] = [
       { question: "Can I expand my storage?", answer: "Yes, you can expand your storage at any time through your account dashboard." },
     ],
   },
+  {
+    title: "Email",
+    items: [
+      { question: "What is email hosting?", answer: "We provide a service that allows you to create emails with your domain. For example, support@servotor.com" },
+    ],
+  },
 ];
 
 export default function FAQ() {

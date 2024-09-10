@@ -42,13 +42,6 @@ export default function Apps() {
                         </button>
                     </div>
                 </div>
-
-                {/* Right side image placeholder */}
-                <div className="w-full md:w-[35%] mt-6 md:mt-0 flex justify-center items-center">
-                <div className="w-full h-48 bg-gray-300 rounded-lg flex justify-center items-center">
-                    <p className="text-slate-500">Image goes here</p>
-                </div>
-                </div>
             </div>
             <div className="w-full mt-[2%]">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mx-[10%] mb-[2%]">

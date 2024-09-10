@@ -21,28 +21,21 @@ export default function Hero() {
     return (
         <main>
             <div className="bg-gray-100 flex items-center justify-center pt-[10%]">
-                <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start px-6">
-                    {/* Left side with text and buttons */}
-                    <div className="w-full md:w-1/2">
+                <div className="w-full max-w-7xl mx-auto flex flex-col items-center text-center px-6">
+                    {/* Centered text */}
+                    <div className="w-full">
                         <h1 className="text-5xl md:text-6xl font-bold text-gray-800 leading-tight mb-6">
                             Hosting Solutions
                             <br />
                             For <span className="text-teal-700">Everyone</span>
                         </h1>
-                        <div className="flex space-x-4">
+                        <div className="flex justify-center space-x-4">
                             <button className="bg-teal-700 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-800 transition">
                                 Get Started
                             </button>
                             <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-800 hover:text-white transition">
                                 Learn More
                             </button>
-                        </div>
-                    </div>
-                    {/* Right side for image */}
-                    <div className="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center">
-                        <div className="w-full h-64 bg-gray-300 rounded-md">
-                            {/* Placeholder for the image */}
-                            <p className="text-gray-500 text-center mt-24">Image goes here</p>
                         </div>
                     </div>
                 </div>
@@ -64,7 +57,7 @@ export default function Hero() {
                                 height={30}
                                 className="mb-4"
                             />
-                            <div className=" pl-[5%] flex flex-col">
+                            <div className="pl-[5%] flex flex-col">
                                 <p className="text-xl font-semibold text-teal-700">{card.label}</p>
                                 <p className="text-teal-700 hover:underline mt-2">Learn more &rsaquo;</p>
                             </div>

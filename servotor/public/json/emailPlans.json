@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Starter",
+        "emails": "3",
+        "storage":"5 GB SSD",
+        "monthly":"$2.99",
+        "annually":"$2.49",
+        "link": ""
+    },
+    {
+        "name": "Standard",
+        "emails": "10",
+        "storage":"15 GB SSD",
+        "monthly":"$4.49",
+        "annually":"$3.99",
+        "link": ""
+    },
+    {
+        "name": "Pro",
+        "emails": "100",
+        "storage":"30 GB SSD",
+        "monthly":"$9.99",
+        "annually":"$8.99",
+        "link": ""
+    }
+]

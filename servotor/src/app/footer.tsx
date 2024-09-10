@@ -40,6 +40,7 @@ export default function Footer() {
             <p className="text-md text-teal-700 font-bold">___</p>
             <div className="pt-4 flex flex-col">
                 <Link href="/game-server" className="text-md text-slate-800 py-1 hover:underline">Game Servers</Link>
+                <Link href="/email-server" className="text-md text-slate-800 py-1 hover:underline">Email Servers</Link>
                 <Link href="/web-server" className="text-md text-slate-800 py-1 hover:underline">Web Servers</Link>
                 <Link href="/vps" className="text-md text-slate-800 py-1 hover:underline">VPS</Link>
                 <Link href="/storage" className="text-md text-slate-800 py-1 hover:underline">Storage</Link>
@@ -54,6 +55,7 @@ export default function Footer() {
                 <Link href="https://imported-armchair-30b.notion.site/87b9c54ad03a450593567d8e8e54c466?v=cd2815c463064385a964fc6ef8903198&pvs=4" className="text-md text-slate-800 py-1 hover:underline">Road Map</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Update Board</Link>
                 <Link href="/" className="text-md text-slate-800 py-1 hover:underline">Server Health Boards</Link>
+                <Link href="/icons" className="text-md text-slate-800 py-1 hover:underline">Icon Credits</Link>
             </div>
         </div>
         <div className="w-[25%]">

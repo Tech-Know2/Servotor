@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Email Forwarding",
+        "image": "controlIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "Aliasing",
+        "image": "customIcon.png",
+        "link": "/"
+    },
+    {
+        "label": "Scalable Storage",
+        "image": "mauticLogo.png",
+        "link": "/"
+    },
+    {
+        "label": "Secure Storage",
+        "image": "scalableIcon.png",
+        "link": "/"
+    }
+]
