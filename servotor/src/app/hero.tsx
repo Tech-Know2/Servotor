@@ -33,7 +33,7 @@ export default function Hero() {
                             <button className="bg-teal-700 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-800 transition">
                                 Get Started
                             </button>
-                            <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-3 px-6 rounded-md text-lg font-medium hover:bg-teal-800 hover:text-white transition">
+                            <button className="bg-transparent border-2 border-teal-700 text-teal-700 py-2.5 px-6 rounded-md text-lg font-medium hover:bg-teal-800 hover:text-white transition">
                                 Learn More
                             </button>
                         </div>
