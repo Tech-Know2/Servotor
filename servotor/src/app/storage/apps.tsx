@@ -20,7 +20,7 @@ export default function Apps() {
     return (
         <div className="bg-slate-100 min-h-screen flex justify-center pt-[5%]">
             <div className="flex flex-col w-full h-full items-center">
-            <h1 className="text-3xl text-center font-bold text-teal-800">Cloud Storage Features</h1>
+            <h1 className="text-3xl text-center font-bold text-teal-800">Advanced Data Storage</h1>
             <h1 className="text-3xl text-center font-bold text-teal-800">___</h1>
             
             <div className="bg-white rounded-lg shadow-lg w-[80%] p-[5%] mt-8 flex flex-col md:flex-row justify-between items-start">
@@ -29,8 +29,10 @@ export default function Apps() {
                     <h2 className="text-3xl font-bold text-slate-800 mb-4"><span className="text-teal-700">Affordable</span> Pricing for your Data</h2>
                     <h3 className="text-xl text-slate-600 mb-4">Scale or downsize your plan with affordable and secure data storage</h3>
                     <ul className="list-disc list-inside text-slate-700">
-                        <li className="mb-2">Manage through a clear and modern control panel</li>
-                        <li>Access from multiple devices with easy to use UI and UX</li>
+                        <li>Intuitive, modern control panel for easy management</li>
+                        <li>Access your data from multiple devices with a user-friendly interface</li>
+                        <li>Advanced integration with your existing cloud and storage solutions</li>
+                        <li>Automatic backup options for peace of mind</li>
                     </ul>
 
                     <div className="flex space-x-4 pt-[5%]">

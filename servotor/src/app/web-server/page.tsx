@@ -8,6 +8,7 @@ import Hero from "./hero";
 import Plans from "./plans";
 import Apps from "./apps";
 import Scroll from "../scrollAnimation";
+import Features from "./features";
 
 // Define the fadeIn animation
 const fadeIn = {
@@ -44,6 +45,10 @@ export default function Home() {
 
       <Section>
         <Plans />
+      </Section>
+
+      <Section>
+        <Features />
       </Section>
 
       <Section>

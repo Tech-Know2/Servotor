@@ -29,7 +29,7 @@ export default function Apps() {
                     <h2 className="text-3xl font-bold text-slate-800 mb-4"><span className="text-teal-700">Scalable</span> Email Services</h2>
                     <h3 className="text-xl text-slate-600 mb-4">Instantly deploy and manage web applications powered by "Auto Installers"</h3>
                     <ul className="list-disc list-inside text-slate-700">
-                        <li className="mb-2">Easily deploy and manage your emails and in boxes</li>
+                        <li className="mb-2">Easily deploy and manage your emails and inboxes</li>
                         <li>Create forwarding and aliasing with the utmost ease</li>
                     </ul>
 

@@ -7,6 +7,7 @@ import Footer from "../footer";
 import Hero from "./hero";
 import Plans from "./plans";
 import Apps from "./apps";
+import Features from "./features";
 import Scroll from "../scrollAnimation";
 
 // Define the fadeIn animation
@@ -44,6 +45,10 @@ export default function Home() {
 
       <Section>
         <Plans />
+      </Section>
+
+      <Section>
+        <Features />
       </Section>
 
       <Section>

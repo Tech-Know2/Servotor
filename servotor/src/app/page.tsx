@@ -10,6 +10,7 @@ import Panels from "./panels";
 import Footer from "./footer";
 import FAQ from "./faq";
 import Scroll from "./scrollAnimation";
+import Features from "./features";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 50, transition: { duration: 0.8, ease: "easeInOut" } },
@@ -48,6 +49,10 @@ export default function Home() {
 
       <Section>
         <Plans />
+      </Section>
+
+      <Section>
+        <Features />
       </Section>
 
       <Section>
