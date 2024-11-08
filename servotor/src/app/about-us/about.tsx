@@ -6,7 +6,7 @@ export default function About() {
           
           {/* Cooper's Story */}
           <div className="md:w-1/2 pr-0 md:pr-12">
-            <h2 className="text-3xl font-semibold text-teal-700 mb-4">Cooper's Journey</h2>
+            <h2 className="text-3xl font-semibold text-teal-700 mb-4">Coopers Journey</h2>
             <div className="text-left">
               <h3 className="text-xl font-bold text-gray-700 mb-2">The Start:</h3>
               <p className="text-gray-600 mb-6 leading-relaxed indent-8">
@@ -32,8 +32,8 @@ export default function About() {
   
           {/* Arya's Story (Placeholder) */}
           <div className="md:w-1/2 pl-0 md:pl-12 mt-12 md:mt-0">
-            <h2 className="text-3xl font-semibold text-teal-700 mb-4">Arya's Story</h2>
-            <p className="text-gray-600 leading-relaxed">[Arya's story content will go here]</p>
+            <h2 className="text-3xl font-semibold text-teal-700 mb-4">Aryas Story</h2>
+            <p className="text-gray-600 leading-relaxed">[Aryas story content will go here]</p>
           </div>
         </div>
       </div>
