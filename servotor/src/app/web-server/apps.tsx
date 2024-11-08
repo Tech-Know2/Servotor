@@ -27,7 +27,7 @@ export default function Apps() {
                 {/* Left side content */}
                 <div className="flex flex-col w-full md:w-[60%]">
                     <h2 className="text-3xl font-bold text-slate-800 mb-4"><span className="text-teal-700">One Click</span> Web Applications</h2>
-                    <h3 className="text-xl text-slate-600 mb-4">Instantly deploy and manage web applications powered by "Auto Installers"</h3>
+                    <h3 className="text-xl text-slate-600 mb-4">Instantly deploy and manage web applications powered by Auto Installers</h3>
                     <ul className="list-disc list-inside text-slate-700">
                         <li className="mb-2">Create Websites, Gits, ecommerce shops, and so much more</li>
                         <li>Manage emails, domains, SSLs, all while being Ddos protected</li>

@@ -68,7 +68,7 @@ export default function ResourceSliders() {
       <div className="text-center mb-8 w-[80%] mx-auto">
         <div className="flex flex-col items-center">
           <p className="bg-white shadow-lg rounded-lg px-[1%] py-[0.5%] w-fit text-slate-800 font-bold text-center uppercase">Cloud Resources Configuration</p>
-          <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Design your Application's Home</h1>
+          <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Design your Applications Home</h1>
         </div>
         <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto">
           <motion.label

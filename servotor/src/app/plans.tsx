@@ -17,7 +17,7 @@ export default function Plans() {
                   <p className="text-xl font-bold text-teal-700">___</p>
                   <p className="text-md text-slate-800 mt-[5%] mb-[5%]">
                     Power your websites with the best in class hardware and
-                    software. Deploy with ease and comfort knowing that it's
+                    software. Deploy with ease and comfort knowing that its
                     safe and protected.
                   </p>
                   <div className="flex flex-col">

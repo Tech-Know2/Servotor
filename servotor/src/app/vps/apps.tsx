@@ -27,7 +27,7 @@ export default function Apps() {
                 {/* Left side content */}
                 <div className="flex flex-col w-full md:w-[60%]">
                     <h2 className="text-3xl font-bold text-slate-800 mb-4"><span className="text-teal-700">Instantly</span> Deployable Everywhere</h2>
-                    <h3 className="text-xl text-slate-600 mb-4">Countless OS's, Panels, and One Click App Installs powered by the best in class</h3>
+                    <h3 className="text-xl text-slate-600 mb-4">Countless OSs, Panels, and One Click App Installs powered by the best in class</h3>
                     <ul className="list-disc list-inside text-slate-700">
                         <li className="mb-2">99.9% Uptime in all of our locations</li>
                         <li>Easily deploy, manage, and scale whenever your business requires you to</li>
