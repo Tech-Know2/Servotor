@@ -48,63 +48,63 @@ export default function Plans() {
                     <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Select What Works for You</h1>
                 </div>
                 
-            <div className="flex flex-col">
-                {/* Pricing Toggle */}
-                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto mb-4">
-                    <motion.label
-                        className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
-                        animate={{ scale: pricingDuration === 'monthly' ? 1.1 : 1 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <input 
-                            type="radio" 
-                            name="pricing-toggle" 
-                            value="monthly" 
-                            checked={pricingDuration === 'monthly'} 
-                            onChange={handlePricingChange}
-                            className="hidden"
-                        />
-                        Monthly
-                    </motion.label>
-                    <motion.label
-                        className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
-                        animate={{ scale: pricingDuration === 'annually' ? 1.1 : 1 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <input 
-                            type="radio" 
-                            name="pricing-toggle" 
-                            value="annually" 
-                            checked={pricingDuration === 'annually'} 
-                            onChange={handlePricingChange}
-                            className="hidden"
-                        />
-                        Annually
-                    </motion.label>
-                </div>
-
-                {/* Software Selection */}
-                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto">
-                    {["None", "Wordpress", "Prestashop", "Woocommerce", "Joomla", "Mautic"].map((option) => (
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
+                    {/* Pricing Toggle */}
+                    <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mb-4 sm:mb-0">
                         <motion.label
-                            key={option}
-                            className={`px-4 py-2 cursor-pointer font-bold ${softwareOption === option ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
-                            animate={{ scale: softwareOption === option ? 1.1 : 1 }}
+                            className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                            animate={{ scale: pricingDuration === 'monthly' ? 1.1 : 1 }}
                             transition={{ duration: 0.3 }}
                         >
                             <input 
                                 type="radio" 
-                                name="software" 
-                                value={option} 
-                                checked={softwareOption === option} 
-                                onChange={handleSoftwareChange} 
+                                name="pricing-toggle" 
+                                value="monthly" 
+                                checked={pricingDuration === 'monthly'} 
+                                onChange={handlePricingChange}
                                 className="hidden"
                             />
-                            {option}
+                            Monthly
                         </motion.label>
-                    ))}
+                        <motion.label
+                            className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'annually' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                            animate={{ scale: pricingDuration === 'annually' ? 1.1 : 1 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <input 
+                                type="radio" 
+                                name="pricing-toggle" 
+                                value="annually" 
+                                checked={pricingDuration === 'annually'} 
+                                onChange={handlePricingChange}
+                                className="hidden"
+                            />
+                            Annually
+                        </motion.label>
+                    </div>
+
+                    {/* Software Selection */}
+                    <div className="flex flex-wrap justify-center gap-4 bg-white rounded-full p-2">
+                        {["None", "Wordpress", "Prestashop", "Woocommerce", "Joomla", "Mautic"].map((option) => (
+                            <motion.label
+                                key={option}
+                                className={`px-4 py-2 cursor-pointer font-bold text-center ${softwareOption === option ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                                animate={{ scale: softwareOption === option ? 1.1 : 1 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <input 
+                                    type="radio" 
+                                    name="software" 
+                                    value={option} 
+                                    checked={softwareOption === option} 
+                                    onChange={handleSoftwareChange} 
+                                    className="hidden"
+                                />
+                                {option}
+                            </motion.label>
+                        ))}
+                    </div>
                 </div>
-            </div>
             </div>
 
             {/* Plan Cards */}
@@ -124,7 +124,6 @@ export default function Plans() {
                             <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Memory: </span>{card.memory}</p>
                             <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Storage: </span>{card.storage}</p>
                             {card.bandwidth && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Bandwidth: </span>{card.bandwidth}</p>}
-                            {/* {card.domain && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Domain: </span>{card.domain}</p>} */}
                             {card.email && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Email: </span>{card.email}</p>}
                             {card.DDOS && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">DDOS Protection: </span>{card.DDOS}</p>}
                             {card.BackUps && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Backups: </span>{card.BackUps}</p>}

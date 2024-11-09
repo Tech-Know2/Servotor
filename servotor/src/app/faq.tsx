@@ -16,7 +16,7 @@ const faqSections: FAQSection[] = [
   {
     title: "Generic",
     items: [
-      { question: "Servotor?", answer: "We are a small cloud based solution company were we help you launch your servers, websites, and virtual machines for low costs and with incredible ease." },
+      { question: "Servotor?", answer: "We are a small cloud based solution company where we help you launch your servers, websites, and virtual machines for low costs and with incredible ease." },
       { question: "How do I contact support?", answer: "You can email us at support@servotor.com or you can open a ticket in your dashboard." },
     ],
   },
@@ -89,10 +89,10 @@ export default function FAQ() {
         <h1 className="text-3xl text-center font-bold text-[#006d77]">FAQ</h1>
         <h1 className="text-3xl text-center font-bold text-[#006d77]">___</h1>
       </div>
-      <div className="flex justify-center">
-        <div className="w-[80%] flex">
+      <div className="flex justify-center px-4 sm:px-0">
+        <div className="w-full sm:w-[80%] lg:flex">
           {/* Sidebar Buttons */}
-          <div className="w-1/6 flex flex-col space-y-4">
+          <div className="lg:w-1/6 sm:w-full lg:mr-4 sm:mb-4 sm:flex sm:justify-center sm:space-x-4 lg:space-y-4 lg:space-x-0 sm:flex-row lg:flex-col">
             {faqSections.map((section) => (
               <button
                 key={section.title}
@@ -100,7 +100,7 @@ export default function FAQ() {
                   setActiveSection(section.title);
                   setActiveQuestion(null);
                 }}
-                className={`px-4 py-2 rounded-lg font-bold text-md shadow-lg ${
+                className={`px-4 py-2 rounded-lg font-bold text-md shadow-lg w-full sm:w-auto ${
                   activeSection === section.title
                     ? "bg-[#006d77] text-white hover:bg-[#008080]"
                     : "bg-[#495057] text-white hover:bg-[#6c757d]"
@@ -112,7 +112,7 @@ export default function FAQ() {
           </div>
 
           {/* FAQ Content */}
-          <div className="w-5/6 bg-white p-6 rounded-lg shadow-lg ml-4">
+          <div className="lg:w-5/6 sm:w-full bg-white p-6 rounded-lg shadow-lg">
             {faqSections
               .find((section) => section.title === activeSection)
               ?.items.map((item) => (

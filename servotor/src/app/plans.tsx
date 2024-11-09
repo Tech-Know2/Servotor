@@ -8,9 +8,9 @@ export default function Plans() {
       </h1>
       <h1 className="text-3xl text-center font-bold text-teal-700">___</h1>
       <div className="min-h-screen flex justify-center">
-        <div className="bg-white rounded-lg shadow-lg w-[80%] p-[5%] mt-8 flex flex-col md:flex-row justify-between items-start">
-          <div className="flex flex-row w-full h-full gap-10">
-            <div className="flex flex-col w-full h-full gap-10">
+        <div className="bg-white rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[80%] p-6 mt-8 flex flex-col sm:flex-row justify-between items-center sm:items-start">
+          <div className="flex flex-col sm:flex-row w-full gap-6 sm:gap-10">
+            <div className="flex flex-col w-full gap-6 sm:w-[45%]">
               <Link href="/web-server" className="w-full">
                 <div className="bg-slate-100 rounded-lg shadow px-[5%] py-[5%] transition-transform transform hover:scale-105 hover:shadow-2xl">
                   <p className="text-xl font-bold text-teal-700">Web Hosting</p>
@@ -40,7 +40,8 @@ export default function Plans() {
                 </div>
               </Link>
             </div>
-            <div className="flex flex-col w-full gap-10">
+
+            <div className="flex flex-col w-full gap-6 sm:w-[45%]">
               <Link href="/ai" className="w-full">
                 <div className="bg-slate-100 rounded-lg shadow px-[5%] py-[5%] transition-transform transform hover:scale-105 hover:shadow-2xl">
                   <p className="text-xl font-bold text-teal-700">AI</p>
@@ -69,22 +70,24 @@ export default function Plans() {
                 </div>
               </Link>
             </div>
-            <div className="w-full">
-              <Link href="/vps" className="w-full">
-                <div className="bg-slate-100 rounded-lg shadow px-[5%] pt-[5%] pb-[100%] transition-transform transform hover:scale-105 hover:shadow-2xl">
-                  <p className="text-xl font-bold text-teal-700">VPS</p>
-                  <p className="text-xl font-bold text-teal-700">___</p>
-                  <p className="text-md text-slate-800 mt-[5%] mb-[5%]">
-                    Instantly deploy a VM with over 500+ different OS and
-                    countless one-click applications. Enjoy low pricing, security,
-                    and the latest generation hardware and software.
-                  </p>
-                  <div className="flex flex-col">
-                    <p className="hover:underline">Coming Soon: &rsaquo;</p>
-                  </div>
+          </div>
+
+          {/* This column will expand to match the height of the other two rows */}
+          <div className="w-full sm:w-[45%] mt-6 sm:mt-0 flex-grow h-[70%]">
+            <Link href="/vps" className="w-full">
+              <div className="bg-slate-100 rounded-lg shadow px-[5%] pt-[5%] pb-[5%] transition-transform transform hover:scale-105 hover:shadow-2xl h-full">
+                <p className="text-xl font-bold text-teal-700">VPS</p>
+                <p className="text-xl font-bold text-teal-700">___</p>
+                <p className="text-md text-slate-800 mt-[5%] mb-[5%]">
+                  Instantly deploy a VM with over 500+ different OS and
+                  countless one-click applications. Enjoy low pricing, security,
+                  and the latest generation hardware and software.
+                </p>
+                <div className="flex flex-col">
+                  <p className="hover:underline">Coming Soon: &rsaquo;</p>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
