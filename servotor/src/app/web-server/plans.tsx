@@ -24,6 +24,7 @@ interface Plans {
 export default function Plans() {
     const [dealData, setDealData] = useState<Plans[]>([]);
     const [pricingDuration, setPricingDuration] = useState<'monthly' | 'annually'>('monthly');
+    const [softwareOption, setSoftwareOption] = useState<string>("None");
 
     useEffect(() => {
         setDealData(Plan);
@@ -34,6 +35,11 @@ export default function Plans() {
         setPricingDuration(event.target.value as 'monthly' | 'annually');
     };
 
+    // Handle software selection change
+    const handleSoftwareChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSoftwareOption(event.target.value);
+    };
+
     return (
         <div className="bg-slate-200 mt-[5%] p-8">
             <div className="text-center mb-8 w-[80%] mx-auto">
@@ -41,7 +47,10 @@ export default function Plans() {
                     <p className="bg-white shadow-lg rounded-lg px-[1%] py-[0.5%] w-fit text-slate-800 font-bold text-center uppercase">Plans for Everybody & Every Use</p>
                     <h1 className="text-teal-700 text-4xl font-bold py-[2%] text-center">Select What Works for You</h1>
                 </div>
-                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto">
+                
+            <div className="flex flex-col">
+                {/* Pricing Toggle */}
+                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto mb-4">
                     <motion.label
                         className={`px-4 py-2 cursor-pointer font-bold ${pricingDuration === 'monthly' ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
                         animate={{ scale: pricingDuration === 'monthly' ? 1.1 : 1 }}
@@ -73,8 +82,32 @@ export default function Plans() {
                         Annually
                     </motion.label>
                 </div>
+
+                {/* Software Selection */}
+                <div className="inline-flex items-center bg-white rounded-full p-2 justify-center mx-auto">
+                    {["None", "Wordpress", "Prestashop", "Woocommerce", "Joomla", "Mautic"].map((option) => (
+                        <motion.label
+                            key={option}
+                            className={`px-4 py-2 cursor-pointer font-bold ${softwareOption === option ? 'bg-teal-700 text-white rounded-full' : 'text-teal-700'}`}
+                            animate={{ scale: softwareOption === option ? 1.1 : 1 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <input 
+                                type="radio" 
+                                name="software" 
+                                value={option} 
+                                checked={softwareOption === option} 
+                                onChange={handleSoftwareChange} 
+                                className="hidden"
+                            />
+                            {option}
+                        </motion.label>
+                    ))}
+                </div>
+            </div>
             </div>
 
+            {/* Plan Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[80%] mx-auto mb-[2%]">
                 {dealData.map((card, index) => (
                     <motion.div
@@ -84,14 +117,14 @@ export default function Plans() {
                         whileTap={{ scale: 0.95 }}
                     >
                         <div className="flex flex-col">
-                            <p className="text-2xl font-bold mb-2">{card.name}</p>
+                            <p className="text-2xl font-bold mb-2">{softwareOption !== 'None' ? `${card.name} - ${softwareOption}` : card.name}</p>
                             <p className="text-2xl font-bold mb-2 pb-[3%]">_</p>
                             <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Websites: </span>{card.websites}</p>
                             <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Domains: </span>{card.domains}</p>
                             <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Memory: </span>{card.memory}</p>
                             <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Storage: </span>{card.storage}</p>
                             {card.bandwidth && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Bandwidth: </span>{card.bandwidth}</p>}
-                            {card.domain && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Domain: </span>{card.domain}</p>}
+                            {/* {card.domain && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Domain: </span>{card.domain}</p>} */}
                             {card.email && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Email: </span>{card.email}</p>}
                             {card.DDOS && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">DDOS Protection: </span>{card.DDOS}</p>}
                             {card.BackUps && <p className="text-lg text-gray-600 mb-2"><span className="font-bold text-teal-800">Backups: </span>{card.BackUps}</p>}

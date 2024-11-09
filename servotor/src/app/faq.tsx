@@ -78,55 +78,62 @@ export default function FAQ() {
   const [activeQuestion, setActiveQuestion] = useState<string | null>(null);
 
   const toggleQuestion = (question: string) => {
-    setActiveQuestion(prevQuestion => (prevQuestion === question ? null : question));
+    setActiveQuestion((prevQuestion) =>
+      prevQuestion === question ? null : question
+    );
   };
 
   return (
-    <div>
-        <div>
-            <h1 className="text-3xl text-center font-bold text-teal-800">
-                FAQ
-            </h1>
-            <h1 className="text-3xl text-center font-bold text-teal-800">___</h1>
-        </div>
-        <div className="bg-slate-100 py-12 flex justify-center">
-            <div className="w-[80%] flex">
-                <div className="w-1/6 flex flex-col space-y-4">
-                {faqSections.map(section => (
-                    <button
-                    key={section.title}
-                    onClick={() => {
-                        setActiveSection(section.title);
-                        setActiveQuestion(null);
-                    }}
-                    className={`px-4 py-2 rounded-lg text-white font-bold text-md shadow-lg ${
-                        activeSection === section.title ? "bg-teal-700 hover:bg-teal-800" : "bg-slate-400 hover:bg-slate-500"
-                    }`}
-                    >
-                    {section.title}
-                    </button>
-                ))}
-                </div>
+    <div className="bg-[#f7f9fc] py-12">
+      <div>
+        <h1 className="text-3xl text-center font-bold text-[#006d77]">FAQ</h1>
+        <h1 className="text-3xl text-center font-bold text-[#006d77]">___</h1>
+      </div>
+      <div className="flex justify-center">
+        <div className="w-[80%] flex">
+          {/* Sidebar Buttons */}
+          <div className="w-1/6 flex flex-col space-y-4">
+            {faqSections.map((section) => (
+              <button
+                key={section.title}
+                onClick={() => {
+                  setActiveSection(section.title);
+                  setActiveQuestion(null);
+                }}
+                className={`px-4 py-2 rounded-lg font-bold text-md shadow-lg ${
+                  activeSection === section.title
+                    ? "bg-[#006d77] text-white hover:bg-[#008080]"
+                    : "bg-[#495057] text-white hover:bg-[#6c757d]"
+                }`}
+              >
+                {section.title}
+              </button>
+            ))}
+          </div>
 
-                <div className="w-5/6 bg-white p-6 rounded-lg shadow-lg ml-4">
-                {faqSections
-                    .find(section => section.title === activeSection)
-                    ?.items.map(item => (
-                    <div key={item.question} className="mb-4">
-                        <button
-                        className="w-full text-left font-bold text-teal-700 text-lg"
-                        onClick={() => toggleQuestion(item.question)}
-                        >
-                        {item.question}
-                        </button>
-                        {activeQuestion === item.question && (
-                        <p className="mt-2 text-slate-800">{item.answer}</p>
-                        )}
-                    </div>
-                    ))}
+          {/* FAQ Content */}
+          <div className="w-5/6 bg-white p-6 rounded-lg shadow-lg ml-4">
+            {faqSections
+              .find((section) => section.title === activeSection)
+              ?.items.map((item) => (
+                <div key={item.question} className="mb-4">
+                  <button
+                    className="w-full text-left font-bold text-[#006d77] text-lg flex items-center"
+                    onClick={() => toggleQuestion(item.question)}
+                  >
+                    <span className="mr-2">
+                      {activeQuestion === item.question ? "▼" : "▶"}
+                    </span>
+                    {item.question}
+                  </button>
+                  {activeQuestion === item.question && (
+                    <p className="mt-2 text-[#333333]">{item.answer}</p>
+                  )}
                 </div>
-            </div>
-            </div>
+              ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
